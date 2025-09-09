@@ -31,14 +31,17 @@
       margin: 0 auto 1.5rem;
       border-radius: 50%;
       background: #e1e8ed;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
-      font-size: 2rem;
-      color: #3b3b3b;
-      letter-spacing: 1px;
-      user-select: none;
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
     }
     h1 {
       font-size: 1.4rem;
@@ -91,6 +94,42 @@
     .contact-link:hover {
       color: #1a47a4;
     }
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.6rem;
+      margin-top: 2rem;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #f4f6f8;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      outline: none;
+      padding: 0;
+    }
+    .social-btn:hover {
+      background: #e1e8ed;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    }
+    .social-btn svg {
+      width: 32px;
+      height: 32px;
+      display: block;
+    }
+    .linkedin svg {
+      fill: #0a66c2;
+    }
+    .whatsapp svg {
+      fill: #25d366;
+    }
     @media (max-width: 480px) {
       .container {
         padding: 1.3rem 0.5rem 1rem 0.5rem;
@@ -104,7 +143,9 @@
 </head>
 <body>
   <div class="container">
-    <div class="logo" aria-label="Alejo Rodrigo Montana Logo">ARM</div>
+    <div class="logo" aria-label="Alejo Rodrigo Montana Photo">
+      <img src="profile.jpg" alt="Alejo Rodrigo Montana profile photo">
+    </div>
     <h1>Alejo Rodrigo Montana</h1>
     <div class="bio">I'm a Java developer providing contractor services to fit all needs</div>
     <div class="info">
@@ -128,6 +169,18 @@
           Argentina
         </span>
       </div>
+    </div>
+    <div class="social-buttons">
+      <a class="social-btn linkedin" href="https://www.linkedin.com/in/alejo-montana/" target="_blank" rel="noopener" title="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76zm15.5 10.29h-3v-4.5c0-1.11-.01-2.54-1.55-2.54-1.56 0-1.8 1.21-1.8 2.46v4.58h-3v-9h2.89v1.23h.04c.4-.76 1.36-1.55 2.79-1.55 2.98 0 3.53 1.96 3.53 4.51v4.81z"/>
+        </svg>
+      </a>
+      <a class="social-btn whatsapp" href="https://wa.me/541150228849" target="_blank" rel="noopener" title="WhatsApp">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 3C9.373 3 4 8.373 4 15c0 2.49.813 4.912 2.268 6.94L4.063 28l6.24-2.166C12.971 26.57 14.469 27 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 21c-1.43 0-2.837-.324-4.071-.937l-.29-.144-3.702 1.286 1.23-3.795-.187-.305C7.015 18.07 6.333 16.558 6.333 15c0-5.324 4.343-9.667 9.667-9.667S25.667 9.676 25.667 15c0 5.324-4.343 9.667-9.667 9.667zm5.263-6.202c-.289-.145-1.704-.842-1.967-.937-.263-.096-.455-.145-.646.145-.192.29-.74.937-.907 1.13-.168.193-.335.217-.624.072-.29-.145-1.225-.451-2.336-1.44-.863-.77-1.444-1.722-1.617-2.012-.168-.29-.018-.447.127-.592.13-.13.29-.338.434-.507.145-.168.192-.29.289-.482.096-.193.048-.362-.024-.507-.072-.144-.646-1.56-.885-2.142-.233-.56-.472-.484-.646-.493-.167-.008-.358-.01-.549-.01-.192 0-.507.073-.773.362s-1.014.99-1.014 2.417c0 1.426 1.037 2.803 1.182 2.996.145.193 2.04 3.118 4.945 4.25.692.298 1.23.476 1.65.611.693.22 1.325.19 1.825.116.557-.084 1.704-.694 1.945-1.364.24-.67.24-1.244.168-1.364-.072-.12-.263-.192-.553-.337z"/>
+        </svg>
+      </a>
     </div>
   </div>
 </body>
