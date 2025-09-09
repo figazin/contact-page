@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejo Rodrigo Montana - Contact</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafbfc;
+      color: #232323;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      padding: 2.5rem 2rem 2rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      max-width: 410px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      background: #e1e8ed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #3b3b3b;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 0.5rem;
+      font-weight: 600;
+    }
+    .bio {
+      font-size: 1rem;
+      color: #626262;
+      margin-bottom: 1.5rem;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 auto 1.5rem;
+      max-width: 320px;
+      font-size: 1rem;
+      word-break: break-word;
+      gap: 0.5rem;
+      text-align: left;
+    }
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .label {
+      min-width: 95px;
+      font-weight: 500;
+      color: #444;
+      margin-right: 0.5em;
+      text-align: left;
+      flex-shrink: 0;
+    }
+    .value {
+      flex: 1;
+      word-break: break-word;
+    }
+    .address {
+      white-space: normal;
+    }
+    .contact-link {
+      color: #276ef1;
+      text-decoration: none;
+      word-break: break-all;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    .contact-link:hover {
+      color: #1a47a4;
+    }
+    @media (max-width: 480px) {
+      .container {
+        padding: 1.3rem 0.5rem 1rem 0.5rem;
+        max-width: 98vw;
+      }
+      .label {
+        min-width: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo" aria-label="Alejo Rodrigo Montana Logo">ARM</div>
+    <h1>Alejo Rodrigo Montana</h1>
+    <div class="bio">I'm a Java developer providing contractor services to fit all needs</div>
+    <div class="info">
+      <div class="info-row">
+        <span class="label">Email:</span>
+        <span class="value">
+          <a class="contact-link" href="mailto:alejo_montania@hotmail.com">alejo_montania@hotmail.com</a>
+        </span>
+      </div>
+      <div class="info-row">
+        <span class="label">Phone:</span>
+        <span class="value">
+          <a class="contact-link" href="tel:+541150228849">+54 11 5022-8849</a>
+        </span>
+      </div>
+      <div class="info-row">
+        <span class="label">Address:</span>
+        <span class="value address">
+          Condarco 2903<br>
+          1826, Monte Chingolo. Buenos Aires.<br>
+          Argentina
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
